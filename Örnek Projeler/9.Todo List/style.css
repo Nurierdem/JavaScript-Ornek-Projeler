@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.card {
+    border: none !important;
+    border-radius: 20px !important;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3) !important;
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+}
+
+.card-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    border: none !important;
+    padding: 25px 30px !important;
+    border-radius: 20px 20px 0 0 !important;
+}
+
+.card-header .card-title {
+    color: white !important;
+    font-size: 28px !important;
+    font-weight: bold !important;
+    margin: 0 !important;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-body {
+    padding: 30px !important;
+}
+
+.card-body h5 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-control {
+    border: 2px solid #e0e0e0 !important;
+    border-radius: 12px !important;
+    padding: 12px 20px !important;
+    font-size: 16px !important;
+    transition: all 0.3s ease !important;
+}
+
+.form-control:focus {
+    border-color: #667eea !important;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1) !important;
+    outline: none !important;
+}
+
+.btn {
+    border-radius: 10px !important;
+    padding: 10px 25px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+    border: none !important;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3) !important;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4) !important;
+}
+
+.btn-danger {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%) !important;
+    box-shadow: 0 4px 15px rgba(245, 87, 108, 0.3) !important;
+}
+
+.btn-danger:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px rgba(245, 87, 108, 0.4) !important;
+}
+
+.btn-secondary {
+    background: linear-gradient(135deg, #434343 0%, #000000 100%) !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3) !important;
+}
+
+.btn-secondary:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4) !important;
+}
+
+.list-group {
+    border-radius: 12px !important;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.list-group-item {
+    border: none !important;
+    border-bottom: 1px solid #e0e0e0 !important;
+    padding: 15px 20px !important;
+    background: rgba(102, 126, 234, 0.05) !important;
+    transition: all 0.3s ease !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+}
+
+.list-group-item:first-child {
+    border-top-left-radius: 12px !important;
+    border-top-right-radius: 12px !important;
+}
+
+.list-group-item:last-child {
+    border-bottom-left-radius: 12px !important;
+    border-bottom-right-radius: 12px !important;
+    border-bottom: none !important;
+}
+
+.list-group-item:hover {
+    background: rgba(102, 126, 234, 0.15) !important;
+    transform: translateX(5px);
+    padding-left: 25px !important;
+}
+
+.list-group-item .delete-item {
+    color: #f5576c !important;
+    text-decoration: none !important;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-group-item .delete-item:hover {
+    background: rgba(245, 87, 108, 0.1);
+    transform: scale(1.2);
+    color: #dc3545 !important;
+}
+
+.alert {
+    border-radius: 12px !important;
+    border: none !important;
+    padding: 15px 20px !important;
+    margin-bottom: 20px !important;
+    font-weight: 500 !important;
+    animation: slideIn 0.3s ease !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1) !important;
+}
+
+.alert-success {
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%) !important;
+    color: white !important;
+}
+
+.alert-warning {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%) !important;
+    color: white !important;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+hr {
+    border: none !important;
+    border-top: 2px solid #e0e0e0 !important;
+    margin: 20px 0 !important;
+}
+
+#todoAddButton {
+    width: 100%;
+    margin-top: 15px;
+}
+
+#clearButton {
+    width: 100%;
+    margin-top: 15px;
+}
+
+/* Empty state */
+.list-group:empty::before {
+    content: "📝 Henüz todo eklenmemiş. Yukarıdan bir todo ekleyin!";
+    display: block;
+    padding: 40px 20px;
+    text-align: center;
+    color: #666;
+    font-style: italic;
+}
+
+/* Todo item animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.list-group-item {
+    animation: fadeIn 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .card-header .card-title {
+        font-size: 22px !important;
+    }
+    
+    .card-body {
+        padding: 20px !important;
+    }
+}
+

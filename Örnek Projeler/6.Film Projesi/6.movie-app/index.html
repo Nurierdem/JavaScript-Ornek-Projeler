@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎥 Film Arama Uygulaması</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <div style="text-align: center; margin-bottom: 30px; padding: 20px;">
+                <h1 style="color: white; font-size: 36px; font-weight: bold; margin-bottom: 10px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">
+                    🎬 Film Arama
+                </h1>
+                <p style="color: rgba(255,255,255,0.9); font-size: 16px;">Popüler filmleri keşfedin veya arama yapın</p>
+            </div>
+            <form id="form">
+                <input type="text" id="searchInput" placeholder="🔍 Film adı yazın...">
+            </form>
+        </div>
+
+        <div class="movies">
+            <!-- <div class="movie">
+                <img class="moviePicture" width="230" height="345" src="https://image.tmdb.org/t/p/w1280/qiAM7Y8xF8wJDDsjeSuLgzyFGmd.jpg" alt="">
+
+                <div class="info">
+                    <h4 class="movieName">Süper Mario Kardeşler Filmi</h4>
+                    <h5 class="imdbPoint">8</h5>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <!-- Film Detay Modal -->
+    <div id="movieDetailModal" class="movie-detail-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div id="movieDetailContent" class="movie-detail-content">
+                <!-- Detay içeriği buraya yüklenecek -->
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="config.js"></script>
+    <script src="api.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

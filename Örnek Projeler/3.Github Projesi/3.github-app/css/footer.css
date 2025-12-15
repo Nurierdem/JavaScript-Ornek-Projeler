@@ -1,0 +1,81 @@
+#footer {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+#mainDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#mainDiv h5 {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+#socialMediaDiv {
+    display: flex;
+    align-items: center;
+}
+
+#socialMediaDiv a {
+    margin-right: 20px;
+}
+
+#socialMediaDiv a:last-child {
+    margin-right: 0;
+}
+
+#socialMediaDiv a {
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+#socialMediaDiv a:hover {
+    transform: translateY(-5px) scale(1.1);
+}
+
+#instagramLogo {
+    font-size: 40px;
+    color: #E4405F;
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 4px 8px rgba(228, 64, 95, 0.3));
+}
+
+#instagramLogo:hover {
+    color: #C13584;
+    filter: drop-shadow(0 6px 12px rgba(228, 64, 95, 0.5));
+}
+
+#youtubeLogo {
+    font-size: 40px;
+    color: #FF0000;
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 4px 8px rgba(255, 0, 0, 0.3));
+}
+
+#youtubeLogo:hover {
+    color: #CC0000;
+    filter: drop-shadow(0 6px 12px rgba(255, 0, 0, 0.5));
+}
+
+#twitterLogo {
+    font-size: 40px;
+    color: #1DA1F2;
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 4px 8px rgba(29, 161, 242, 0.3));
+}
+
+#twitterLogo:hover {
+    color: #0d8bd9;
+    filter: drop-shadow(0 6px 12px rgba(29, 161, 242, 0.5));
+}

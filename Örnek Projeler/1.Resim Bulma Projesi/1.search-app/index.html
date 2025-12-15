@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resim Arama Uygulaması</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-wrapper">
+            <h1 style="text-align: center; margin-bottom: 20px; color: #333; font-size: 28px;">🔍 Resim Arama</h1>
+            <form id="form">
+                <input id="searchInput" type="text" placeholder="Aramak istediğiniz resmi yazın..."/>
+
+                <div class="button-wrapper">
+                    <button id="searchButton" type="submit">Ara</button>
+                    <button id="clearButton" type="button">Temizle</button>
+                </div>
+            </form> 
+        </div>
+
+        <div class="imagelist-wrapper">
+            <!-- Resimler burada görünecek -->
+        </div>
+    </div>
+    
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
